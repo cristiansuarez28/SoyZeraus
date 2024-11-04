@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zeraus - Gaming</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/build/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
 </head>
@@ -13,18 +13,22 @@
 <body>
     <!-- Header de mi página -->
 <header id="main-header">
-    <div class="logo_Zeraus">
+    <div onclick="setHeaderMenuHeight()" class="logo_Zeraus">
         <img src="../images/logo_Zeraus.svg" alt="logo_Zeraus"> 
     </div>
-    <nav>
-        <ul>
-            <li><a href="../index.html" class="inicio">Inicio</a></li> 
-            <li><a href="../pages/gaming.html">Gaming</a></li> 
-            <li><a href="../pages/zeraus.html">Zeraus</a></li> 
-            <li><a href="../pages/inspiracion.html">Inspiración</a></li> 
-        </ul>
-    </nav>
-    <button id="open-modal" class="boton-header" data-toggle="modal" data-target="#modal">Conóceme</button>
+    <!-- hambuerguesa responsive-->
+    <div class="header-menu responsive-close">
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="inicio">Inicio</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="zeraus.html">Zeraus</a></li> 
+                <li><a href="inspiracion.html">Inspiracion</a></li>
+            </ul>
+        </nav>
+        <button id="open-modal" class="boton-header" data-toggle="modal" data-target="#modal">Conóceme</button>
+        </div>
+    
 
 </header>
 
@@ -185,7 +189,7 @@
     </div>
 
     <!-- Bootstrap-->
-    
+    <script src="../js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
