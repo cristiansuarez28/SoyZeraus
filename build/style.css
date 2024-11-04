@@ -757,7 +757,7 @@ nav ul li a:hover {
 /* segundo banner*/
 .banner-zorrito {
   margin: 60px 0;
-  background-image: url("/images/Banner_zorrito.jpg");
+  background-image: url("../images/Banner_zorrito.jpg");
   background-size: 100% 100%;
   width: 100%;
   padding: 38px 364px;
